@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const url = "http://localhost:3030/noticias";
+    const url = "https://002bab58-5cbf-45b6-bfa7-d43590a51bee-00-3irg6wu2u2vbb.picard.replit.dev/";
 
     // Elementos da página
     const tituloElement = document.getElementById('noticia-titulo');
