@@ -143,7 +143,7 @@ document.addEventListener('DOMContentLoaded', function () {
         slide.className = 'carrossel-slide hero-slide';
         slide.innerHTML = `
             <div class="slide-content">
-                <h1 class="hero-title">Transforme Vidas Animal</h1>
+                <h1 class="hero-title">Transforme Vidas Animais</h1>
                 <p class="hero-subtitle">Apadrinhe, doe ou adote. Faça parte dessa corrente do bem</p>
                 <div class="hero-buttons">
                     <a href="#apadrinhar" class="btn btn-primary">Apadrinhar um Animal</a>
