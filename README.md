@@ -1,7 +1,5 @@
 # 🐾 Amparo Animal
 
-Foi adicionado uma landing page e foi adicionado o botão ver noticia para exibir a noticia completa
-
 ## ✨ Funcionalidades
 
 - 📰 **Sistema de Notícias**: CRUD completo para publicações
@@ -21,12 +19,6 @@ Foi adicionado uma landing page e foi adicionado o botão ver noticia para exibi
 ## 📦 Instalação e Uso
 
 ### Pré-requisitos
+
 - Node.js instalado
 - Git
-
-### Passos para executar
-
-1. **Clone o repositório:**
-```bash
-git clone https://github.com/erezende544/Landing-Page---Amparo-Animal.git
-cd Landing-Page---Amparo-Animal
