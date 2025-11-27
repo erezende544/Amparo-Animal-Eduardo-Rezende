@@ -1,68 +1,32 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
-
 :root {
-  /* 🎨 Cores principais */
   --background: #fff9f0;
-  /* Fundo geral da página (creme claro) */
   --foreground: #3e2723;
-  /* Texto principal (marrom escuro) */
-
   --card: #fef6e3;
-  /* Fundo dos cartões e painéis */
   --card-foreground: #3e2723;
-  /* Texto dentro dos cartões */
-
   --popover: #f8f5f0;
-  /* Fundo de pop-ups / tooltips */
   --popover-foreground: #3e2723;
-  /* Texto de pop-ups */
-
   --primary: #ef8867;
-  /* Coral - cor principal (botões, destaques) */
   --primary-foreground: #ffffff;
-  /* Texto sobre o botão principal */
-
   --secondary: #a7c210;
-  /* Verde maçã - cor secundária */
   --secondary-foreground: #1b5e20;
-  /* Texto sobre o botão secundário */
-
   --muted: #f0e9e0;
-  /* Cor neutra de fundo alternativo */
   --muted-foreground: #6d4c41;
-  /* Texto neutro */
-
   --accent: #c8e6c9;
-  /* Verde suave para realces */
   --accent-foreground: #1b5e20;
-  /* Texto em elementos de destaque */
-
   --destructive: #c62828;
-  /* Vermelho de perigo/exclusão */
   --destructive-foreground: #ffffff;
-  /* Texto sobre o vermelho */
-
   --border: #e0d6c9;
-  /* Cor das bordas */
   --input: #e0d6c9;
-  /* Cor das bordas de inputs */
   --ring: #2e7d32;
-  /* Verde escuro (foco/seleção) */
-
-  /* Tipografia e layout */
   --font-sans: "Poppins", ui-sans-serif, sans-serif, system-ui;
   --radius: 0.5rem;
-
-  /* Sombras */
   --shadow-sm: 0 1px 3px hsl(0 0% 0% / 0.1), 0 1px 2px -1px hsl(0 0% 0% / 0.1);
   --shadow: 0 1px 3px hsl(0 0% 0% / 0.1), 0 1px 2px -1px hsl(0 0% 0% / 0.1);
   --shadow-md: 0 1px 3px hsl(0 0% 0% / 0.1), 0 2px 4px -1px hsl(0 0% 0% / 0.1);
   --shadow-lg: 0 1px 3px hsl(0 0% 0% / 0.1), 0 4px 6px -1px hsl(0 0% 0% / 0.1);
 }
 
-/* ---------------------------------------------- */
-/* BASE GLOBAL                                    */
-/* ---------------------------------------------- */
+/* Base Global */
 html {
   font-size: 16px;
 }
@@ -75,13 +39,13 @@ body {
 }
 
 .navbar {
-  background-color: var(--card) !important;
+  background-color: var(--card);
   box-shadow: var(--shadow-sm);
   border-bottom: 1px solid var(--border);
 }
 
 .navbar-brand {
-  color: var(--primary) !important;
+  color: var(--primary);
   font-weight: 700;
 }
 
@@ -100,9 +64,7 @@ h2 {
   font-weight: 600;
 }
 
-/* ---------------------------------------------- */
-/* CARTÕES                                        */
-/* ---------------------------------------------- */
+/* Cartões */
 .cartao {
   background-color: var(--card);
   color: var(--card-foreground);
@@ -113,9 +75,7 @@ h2 {
   border: 1px solid var(--border);
 }
 
-/* ---------------------------------------------- */
-/* FORMULÁRIOS                                    */
-/* ---------------------------------------------- */
+/* Formulários */
 .grupo-formulario {
   margin-bottom: 1rem;
 }
@@ -140,9 +100,7 @@ h2 {
   resize: vertical;
 }
 
-/* ---------------------------------------------- */
-/* BOTÕES                                         */
-/* ---------------------------------------------- */
+/* Botões */
 button {
   padding: 0.7rem 1.2rem;
   border: none;
@@ -160,7 +118,7 @@ button:hover {
   transform: scale(1.03);
 }
 
-/* Botão principal */
+/* Botão Principal */
 button[type="submit"],
 .botao-principal {
   background-color: var(--primary);
@@ -173,13 +131,14 @@ button[type="submit"]:hover,
   color: var(--secondary-foreground);
 }
 
-/* Botões de ação (editar/excluir) */
+/* Botões de Ação */
 .botao-de-acao {
   background: none;
   border: none;
   padding: 0.5rem;
   cursor: pointer;
   font-weight: 500;
+  transition: box-shadow 0.25s ease;
 }
 
 .botao-de-acao:hover {
@@ -189,12 +148,9 @@ button[type="submit"]:hover,
 .botao-editar {
   color: var(--primary);
 }
-
 .botao-excluir {
   color: var(--destructive);
 }
-
-/* Estilos para o botão Ver Notícia */
 .botao-ver {
   color: var(--secondary);
 }
@@ -202,16 +158,6 @@ button[type="submit"]:hover,
 .botao-ver:hover {
   color: var(--secondary-foreground);
   background-color: var(--secondary);
-}
-
-/* Estilos para a página de notícia completa */
-.conteudo-noticia {
-  line-height: 1.7;
-  font-size: 1.1rem;
-}
-
-.conteudo-noticia p {
-  margin-bottom: 1.5rem;
 }
 
 /* Sucesso / Perigo / Secundário */
@@ -243,7 +189,7 @@ button[type="submit"]:hover,
   color: var(--accent-foreground);
 }
 
-/* Agrupamento de botões */
+/* Agrupamento de Botões */
 .botoes-edicao {
   display: flex;
   justify-content: space-between;
@@ -256,9 +202,7 @@ button[type="submit"]:hover,
   flex: 1;
 }
 
-/* ---------------------------------------------- */
-/* LISTA DE NOTÍCIAS                              */
-/* ---------------------------------------------- */
+/* Lista de Notícias */
 .grid-noticias {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -320,9 +264,7 @@ button[type="submit"]:hover,
   gap: 0.5rem;
 }
 
-/* ---------------------------------------------- */
-/* VIEW FORM / LISTA                              */
-/* ---------------------------------------------- */
+/* View Form / Lista */
 #view-formulario {
   display: block;
 }
@@ -350,16 +292,18 @@ button[type="submit"]:hover,
   gap: 10px;
   justify-content: center;
   align-items: center;
+  transition:
+    background-color 0.25s ease,
+    transform 0.15s ease;
 }
 
 #botao-nova-noticia:hover {
   background-color: var(--secondary);
   color: var(--secondary-foreground);
+  transform: scale(1.03);
 }
 
-/* ---------------------------------------------- */
-/* LAYOUT DE EDIÇÃO                               */
-/* ---------------------------------------------- */
+/* Layout de Edição */
 .layout-edicao-noticia {
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -380,7 +324,7 @@ button[type="submit"]:hover,
   gap: 1.5rem;
 }
 
-/* Prévia da imagem */
+/* Prévia da Imagem */
 .preview-imagem {
   width: 100%;
   height: 300px;
@@ -399,9 +343,7 @@ button[type="submit"]:hover,
   object-fit: cover;
 }
 
-/* ---------------------------------------------- */
-/* PAINÉIS DE INFORMAÇÕES                         */
-/* ---------------------------------------------- */
+/* Painéis de Informações */
 .painel-informacoes,
 .painel-opcoes {
   background-color: var(--card);
@@ -430,35 +372,7 @@ button[type="submit"]:hover,
   color: var(--muted-foreground);
 }
 
-/* ---------------------------------------------- */
-/* RESPONSIVIDADE                                 */
-/* ---------------------------------------------- */
-@media (max-width: 850px) {
-  .layout-edicao-noticia {
-    grid-template-columns: 1fr;
-  }
-}
-
-/* Estilos para a página de notícia completa */
-.conteudo-noticia {
-  line-height: 1.7;
-  font-size: 1.1rem;
-}
-
-.conteudo-noticia p {
-  margin-bottom: 1.5rem;
-}
-
-.botao-ver {
-  color: var(--secondary);
-}
-
-.botao-ver:hover {
-  color: var(--secondary-foreground);
-  background-color: var(--secondary);
-}
-
-/* Estilos para a página de notícia completa */
+/* Estilos para Página de Notícia Completa */
 .noticia-imagem-destaque {
   height: 400px;
   object-fit: cover;
@@ -504,7 +418,40 @@ button[type="submit"]:hover,
   font-weight: 600;
 }
 
+.conteudo-noticia {
+  line-height: 1.7;
+  font-size: 1.1rem;
+}
+
+.conteudo-noticia p {
+  margin-bottom: 1.5rem;
+}
+
+/* Botão Voltar Melhorado */
+.btn-outline-secondary {
+  border-color: var(--border);
+  color: var(--foreground);
+  transition: all 0.3s ease;
+}
+
+.btn-outline-secondary:hover {
+  background-color: var(--primary);
+  border-color: var(--primary);
+  color: white;
+}
+
+/* Informações Admin */
+.admin-info {
+  /* Estilos específicos para informações de admin */
+}
+
 /* Responsividade */
+@media (max-width: 850px) {
+  .layout-edicao-noticia {
+    grid-template-columns: 1fr;
+  }
+}
+
 @media (max-width: 768px) {
   .noticia-imagem-destaque {
     height: 250px;
@@ -517,17 +464,42 @@ button[type="submit"]:hover,
   .noticia-conteudo-completo {
     font-size: 1rem;
   }
+
+  .grid-noticias {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .cartao-noticia {
+    max-width: 100%;
+  }
+
+  .cartao-noticia-acoes {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .botoes-edicao {
+    flex-direction: column;
+  }
 }
 
-/* Melhorias para o botão de voltar */
-.btn-outline-secondary {
-  border-color: var(--border);
-  color: var(--foreground);
-  transition: all 0.3s ease;
-}
+@media (max-width: 480px) {
+  .cartao-noticia-conteudo {
+    padding: 0.75rem;
+  }
 
-.btn-outline-secondary:hover {
-  background-color: var(--primary);
-  border-color: var(--primary);
-  color: white;
+  .cartao-noticia-conteudo h3 {
+    font-size: 1rem;
+  }
+
+  .preview-imagem {
+    height: 200px;
+  }
+
+  .painel-informacoes,
+  .painel-opcoes {
+    padding: 0.75rem;
+  }
 }
